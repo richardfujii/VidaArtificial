@@ -1,4 +1,4 @@
-package jogodavida;
+﻿package jogodavida;
 
 /*
 /*
@@ -173,7 +173,7 @@ public class TabuleiroGOL extends JPanel implements ComponentListener, MouseList
                     /**
                      * Regra de sobrevivência. Se uma célula está viva em um
                      * determinado instante, e se a quantidade de seus vizinhos
-                     * vivos é igual a dois ou maior que 4 e menor que 7, a
+                     * vivos é igual ou maior que 4 e menor que 7, a
                      * celula sobrevive na próxima iteração. Sobra recursos
                      * suficientes
                      */
@@ -194,7 +194,7 @@ public class TabuleiroGOL extends JPanel implements ComponentListener, MouseList
                      * Regra de nascimento seguindo Seed, uma vez que jogo da
                      * vida de Conway enfatiza na reprodução da vida de ser
                      * assexuado Se uma célula está morta em um determinado
-                     * instante, mas tem exatamente 2 vizinhos vivos, então esta
+                     * instante, mas tem exatamente 4 ou 6 vizinhos vivos, então esta
                      * célula se torna viva na próxima iteração. Considerando
                      * fecundação sexuada para a questão
                      */
